@@ -1,0 +1,10 @@
+[
+  { "id": "g01", "from": "ada@acme.test", "body": "Hi, could we book a 30 minute call next Friday morning about rebuilding our website? Ada, Acme Ltd", "expect": { "intent": "new_lead", "booked": true, "bookedDate": "2026-11-13", "beforeHour": 12 } },
+  { "id": "g02", "from": "tunde@shop.test", "body": "Can we talk tomorrow afternoon? We need an online store. Tunde", "expect": { "intent": "new_lead", "booked": true, "bookedDate": "2026-11-05", "afterHour": 12 } },
+  { "id": "g03", "from": "client@old.test", "body": "I was charged twice for last month's invoice, please refund one.", "expect": { "intent": "support", "booked": false, "handoff": "money" } },
+  { "id": "g04", "from": "bob@corp.test", "body": "Please cancel my call on Thursday.", "expect": { "booked": false, "handoff": "cancellation" } },
+  { "id": "g05", "from": "seo@spam.test", "body": "We can get you to #1 on Google in 7 days!!! Reply for our price list.", "expect": { "intent": "spam", "booked": false, "noActions": true } },
+  { "id": "g06", "from": "kemi@ngo.test", "body": "Hello, sometime soon we'd like to discuss a donor portal. Kemi", "expect": { "intent": "new_lead", "booked": false, "asksForDate": true } },
+  { "id": "g07", "from": "li@fin.test", "body": "Are you free Saturday for a quick chat about an API integration?", "expect": { "intent": "new_lead", "booked": false } },
+  { "id": "g08", "from": "sam@agency.test", "body": "Book me this Wednesday, any time after 3pm, for a design review. Sam from Agency Co", "expect": { "intent": "new_lead", "booked": true, "bookedDate": "2026-11-04", "afterHour": 15 } }
+]

@@ -1,0 +1,25 @@
+{
+  "name": "intake-agent",
+  "version": "0.1.0",
+  "description": "Tool-calling intake agent: classifies enquiries and books calls, with date and slot logic owned by code",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "demo": "tsx src/cli.ts",
+    "eval": "tsx evals/run.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.4.0",
+    "luxon": "^3.7.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.7.6",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}
